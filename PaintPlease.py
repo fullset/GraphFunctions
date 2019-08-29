@@ -1,8 +1,6 @@
 import math
-# import argparse
-#
-# parser = argparse.ArgumentParser(description='Paint graph of some functions')
-# parser.add_argument()
+
+
 x_min = -100
 x_max = 100
 y_min = -2
