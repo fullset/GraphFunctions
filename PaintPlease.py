@@ -36,6 +36,7 @@ def get_values() -> dict:
 
     return ret
 
+
 items = get_values()
 
 print(' ' * half_width + '^')
@@ -55,16 +56,6 @@ for i in range(half_height):
     print(str_to_print)
 
 print_x_axis()
-
-# for i in range(half_height):
-#     if i == (half_height / 2 - 1):
-#         print(' ' * (half_width - 4) + str(y_min / 2) + '|')
-#     elif i == half_height - 1:
-#         print(' ' * (half_width - 2) + str(y_min) + '|')
-#     else:
-#         print(' ' * half_width + '|')
-
-
 
 for item in items:
     print('{0}: {1}'.format(item, items[item]))
