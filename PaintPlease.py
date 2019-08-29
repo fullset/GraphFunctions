@@ -5,7 +5,7 @@ x_min = -100
 x_max = 100
 y_min = -2
 y_max = 2
-half_height = 20
+height = 20
 half_width = 50
 
 
@@ -38,8 +38,8 @@ def get_values() -> dict:
 items = get_values()
 
 print(' ' * half_width + '^')
-for i in range(half_height):
-    if i == (half_height / 2):
+for i in range(height):
+    if i == (height / 2):
         str_to_print = ' ' * (half_width - 3) + str(y_max / 2) + '|'
     elif i == 0:
         str_to_print = ' ' * (half_width - 1) + str(y_max) + '|'
@@ -47,8 +47,8 @@ for i in range(half_height):
         str_to_print = ' ' * half_width + '|'
 
     for item in items:
-        if (half_height - i - 1) * y_max / half_height < item:
-            if (half_height - i) * y_max / half_height >= item:
+        if (height - i - 1) * y_max / height < item:
+            if (height - i) * y_max / height >= item:
                 x_coord = int((sum(items[item]) / len(items[item])) / 2)
                 str_to_print += ' ' * x_coord + '*'
     print(str_to_print)
